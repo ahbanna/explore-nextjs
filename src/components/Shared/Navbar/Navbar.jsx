@@ -1,6 +1,10 @@
+"use client";
+import Link from "next/link";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  let currentPath = usePathname();
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -49,7 +53,14 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <Link
+              className={
+                currentPath === "/about" ? "active-link" : "panding-link"
+              }
+              href="/about"
+            >
+              About
+            </Link>
           </li>
           <li>
             <details>
@@ -65,13 +76,21 @@ const Navbar = () => {
             </details>
           </li>
           <li>
-            <a>Item 3</a>
+            <Link
+              className={
+                currentPath === "/contact" ? "active-link" : "panding-link"
+              }
+              href="/contact"
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Button</a>
       </div>
+      <h1>{currentPath}</h1>
     </div>
   );
 };
