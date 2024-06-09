@@ -1,5 +1,7 @@
 // --------- Client Side Rendering -----------------
 
+import Image from "next/image";
+
 // "use client";
 // import React, { useEffect, useState } from "react";
 
@@ -31,6 +33,7 @@
 
 // --------- Server Side Rendering -----------------
 
+import strawberryImg from "../../assests/images/strawberry.jpg";
 async function getData() {
   let res = await fetch("https://dummyjson.com/products");
   const data = await res.json();
@@ -41,6 +44,25 @@ const Products = async () => {
   let items = await getData();
   return (
     <div>
+      <h2 className="text-3xl text-center">
+        Image showing using Next.js Image component
+      </h2>
+      <Image
+        src="https://cdn.pixabay.com/photo/2021/07/08/03/55/mount-everest-6395759_1280.jpg"
+        alt="everest image"
+        height="640"
+        width="960"
+        className="mx-auto"
+      ></Image>
+      <h2 className="text-3xl text-center">Image showing from local folder</h2>
+      <Image
+        src={strawberryImg}
+        alt="strawberry"
+        height="400"
+        width="400"
+        className="mx-auto"
+      ></Image>
+      <br />
       <h2>This is products page</h2>
       {items.map((item, index) => {
         return (
