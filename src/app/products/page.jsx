@@ -1,7 +1,5 @@
 // --------- Client Side Rendering -----------------
 
-import Image from "next/image";
-
 // "use client";
 // import React, { useEffect, useState } from "react";
 
@@ -33,7 +31,20 @@ import Image from "next/image";
 
 // --------- Server Side Rendering -----------------
 
-import strawberryImg from "../../assests/images/strawberry.jpg";
+import Image from "next/image";
+// Relative path
+// import strawberryImg from "../../assests/images/strawberry.jpg";
+// Absolute path
+import strawberryImg from "@/assests/images/strawberry.jpg";
+
+export const metadata = {
+  title: "Products Page",
+  description: "Here shows all the products of the store",
+  openGraph: {
+    title: "Blog",
+  },
+};
+
 async function getData() {
   let res = await fetch("https://dummyjson.com/products");
   const data = await res.json();

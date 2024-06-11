@@ -1,0 +1,64 @@
+{
+  "shoes": [
+    {
+      "id": 1,
+      "name": "Air Maxx",
+      "description": "Comfortable running shoes with maximum air cushioning.",
+      "price": 150.99
+    },
+    {
+      "id": 2,
+      "name": "UltraBoost 21",
+      "description": "High-performance running shoes with energy-returning boost.",
+      "price": 99.99
+    },
+    {
+      "id": 3,
+      "name": "Classic Slip-On",
+      "description": "Iconic slip-on shoes with a timeless style.",
+      "price": 49.5
+    },
+    {
+      "id": 4,
+      "name": "Chuck Taylor All Star",
+      "description": "Legendary canvas sneakers that never go out of style.",
+      "price": 55
+    },
+    {
+      "id": 5,
+      "name": "Gel-Kayano 27",
+      "description": "Stability running shoes with advanced support features.",
+      "price": 160
+    },
+    {
+      "id": 6,
+      "name": "Metcon 6",
+      "description": "Versatile training shoes for high-intensity workouts.",
+      "price": 130
+    },
+    {
+      "id": 7,
+      "name": "Blazer Mid '77 Vintage",
+      "description": "Retro-inspired basketball shoes with a mid-top design.",
+      "price": 100
+    },
+    {
+      "id": 8,
+      "name": "Huarache Run",
+      "description": "Iconic running shoes with a snug and flexible fit.",
+      "price": 120
+    },
+    {
+      "id": 9,
+      "name": "Old Skool",
+      "description": "Classic skate shoes with a durable design.",
+      "price": 65
+    },
+    {
+      "id": 10,
+      "name": "Pegasus Trail 3",
+      "description": "Trail running shoes with responsive cushioning and traction.",
+      "price": 130
+    }
+  ]
+}
